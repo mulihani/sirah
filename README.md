@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="[public/logo.png](https://github.com/mulihani/sirah/blob/master/public/images/logo.png)" width="200" alt="Sirah Logo" onerror="this.src='https://laravel.com/img/logomark.min.svg'; this.width=100;">
+    <img src="https://github.com/mulihani/sirah/blob/master/public/images/logo.png" width="200" alt="Sirah Logo" onerror="this.src='https://laravel.com/img/logomark.min.svg'; this.width=100;">
 </p>
 
 # Sirah 🚀
