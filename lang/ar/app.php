@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'site_name'   => 'سيرة',
+    'tagline'     => 'معرض أعمالي الشخصي',
+    'loading'     => 'جاري التحميل...',
+    'not_found'   => 'الصفحة غير موجودة',
+    'empty_state' => 'لا يوجد محتوى متاح حالياً',
+    'read_more'   => 'اقرأ المزيد',
+    'back'        => 'رجوع',
+    'theme_toggle'    => 'تبديل الثيم',
+    'about_me_label'  => 'من أنا',
+    'about_me_title'  => 'تعرف علي',
+    'skills_label'    => 'مهاراتي',
+    'skills_title'    => 'صندوق الأدوات',
+    'works_label'     => 'أعمالي',
+    'skills_group_frontend'   => 'الواجهة الأمامية',
+    'skills_group_backend'    => 'البرمجة والأدوات',
+    'skills_group_design'     => 'التصميم وأخرى',
+    'resume_label'    => 'السيرة الذاتية',
+    'error_404_title'    => 'الصفحة غير موجودة',
+    'error_404_message'  => 'الصفحة التي تبحث عنها غير موجودة أو تم نقلها.',
+    'error_500_title'    => 'خطأ في الخادم',
+    'error_500_message'  => 'حدث خطأ من جانبنا. يرجى المحاولة مرة أخرى لاحقاً.',
+    'go_home'            => 'الذهاب إلى الرئيسية',
+];

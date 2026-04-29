@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'site_name'   => 'Sirah',
+    'tagline'     => 'My Personal Portfolio',
+    'loading'     => 'Loading...',
+    'not_found'   => 'Page Not Found',
+    'empty_state' => 'No content available yet',
+    'read_more'   => 'Read More',
+    'back'        => 'Back',
+    'theme_toggle'    => 'Toggle Theme',
+    'about_me_label'  => 'About Me',
+    'about_me_title'  => 'Get to Know Me',
+    'skills_label'    => 'My Skills',
+    'skills_title'    => 'My Toolbox',
+    'works_label'     => 'Featured Works',
+    'skills_group_frontend'   => 'Frontend',
+    'skills_group_backend'    => 'Backend & Tools',
+    'skills_group_design'     => 'Design & Other',
+    'resume_label'    => 'Resume',
+    'error_404_title'    => 'Page Not Found',
+    'error_404_message'  => 'The page you are looking for doesn\'t exist or has been moved.',
+    'error_500_title'    => 'Server Error',
+    'error_500_message'  => 'Something went wrong on our end. Please try again later.',
+    'go_home'            => 'Go to Homepage',
+];
