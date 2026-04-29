@@ -32,6 +32,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->profile()
             ->brandName('Sirah')
             ->brandLogo(asset('images/logo.png'))
             ->brandLogoHeight('2rem')
