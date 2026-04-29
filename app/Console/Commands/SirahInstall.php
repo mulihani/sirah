@@ -18,8 +18,15 @@ class SirahInstall extends Command
         $this->info('  └─────────────────────────────────────┘');
         $this->info('');
 
-        // 1. Run migrations
+        // 1. Prepare database and Run migrations
         $this->components->task('Running migrations', function () {
+            if (config('database.default') === 'sqlite') {
+                $dbPath = database_path('database.sqlite');
+                if (! file_exists($dbPath)) {
+                    touch($dbPath);
+                }
+            }
+            
             Artisan::call('migrate', ['--force' => true]);
             return true;
         });
