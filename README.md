@@ -122,6 +122,14 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 ---
 
+## Author
+
+- Majed Mulihani
+- Email: [majed@mulihani.com](mailto:majed@mulihani.com)
+- Website: https://www.mulihani.com
+
+---
+
 ## 📄 License
 
 Distributed under the **MIT License**. See `LICENSE` for more information.
