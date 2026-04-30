@@ -28,10 +28,12 @@
                class="text-gray-600 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors">
                 {{ __('navigation.works') }}
             </a>
+            @if($isResumeActive ?? false)
             <a href="{{ route('locale.resume', ['locale' => app()->getLocale()]) }}"
                class="text-gray-600 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors">
                 {{ __('navigation.resume') }}
             </a>
+            @endif
             <a href="{{ route('locale.contact.show', ['locale' => app()->getLocale()]) }}"
                class="text-gray-600 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors">
                 {{ __('navigation.contact') }}
@@ -96,7 +98,9 @@
     <div id="mobile-menu" class="md:hidden hidden border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-950 px-4 py-4 space-y-2">
         <a href="{{ route('locale.home', ['locale' => app()->getLocale()]) }}" class="block py-2 text-gray-700 dark:text-gray-300">{{ __('navigation.home') }}</a>
         <a href="{{ route('locale.works.index', ['locale' => app()->getLocale()]) }}" class="block py-2 text-gray-700 dark:text-gray-300">{{ __('navigation.works') }}</a>
+        @if($isResumeActive ?? false)
         <a href="{{ route('locale.resume', ['locale' => app()->getLocale()]) }}" class="block py-2 text-gray-700 dark:text-gray-300">{{ __('navigation.resume') }}</a>
+        @endif
         <a href="{{ route('locale.contact.show', ['locale' => app()->getLocale()]) }}" class="block py-2 text-gray-700 dark:text-gray-300">{{ __('navigation.contact') }}</a>
         
         @if ($headerPages->isNotEmpty())
