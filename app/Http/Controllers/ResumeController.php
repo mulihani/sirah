@@ -16,6 +16,8 @@ class ResumeController extends Controller
             $locale
         );
 
+        abort_if(! $resume || ! $resume->is_active, 404);
+
         return view('pages.resume', compact('resume', 'locale'));
     }
 }
