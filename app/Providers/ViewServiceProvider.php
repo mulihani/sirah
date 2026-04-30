@@ -45,7 +45,12 @@ class ViewServiceProvider extends ServiceProvider
                 // Load social links once per request
                 $socialLinks = SocialLink::orderBy('sort_order')->get();
 
-                $view->with(compact('settings', 'headerPages', 'footerPages', 'socialLinks'));
+                // Determine if resume is active using FallbackService
+                $fallbackService = app(\App\Services\FallbackService::class);
+                $resume = $fallbackService->getContent(\App\Models\Resume::query(), $locale);
+                $isResumeActive = $resume ? $resume->is_active : false;
+
+                $view->with(compact('settings', 'headerPages', 'footerPages', 'socialLinks', 'isResumeActive'));
             }
         );
     }
